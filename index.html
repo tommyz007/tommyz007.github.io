@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Paper Lab Evidence Collector: a private, read-only research evidence sidecar.">
+  <title>Paper Lab Evidence Collector</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="shell" aria-label="Primary navigation">
+      <a class="brand" href="index.html">Paper Lab Evidence Collector</a>
+      <div class="links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </nav>
+  </header>
+  <main class="shell">
+    <section class="hero">
+      <p class="eyebrow">Private research utility</p>
+      <h1>Evidence collection with a deliberately narrow boundary.</h1>
+      <p class="lede">Paper Lab Evidence Collector is a single-user local research tool. It gathers public SEC filings and selected issuer-alert emails for human review. It does not place trades, approve decisions, or connect to a broker.</p>
+      <p class="notice"><strong>Gmail access is read-only.</strong> The collector requests only the Gmail scope needed to view messages and settings. It cannot send, modify, archive, or delete mail.</p>
+    </section>
+    <section class="grid" aria-label="Operating boundaries">
+      <article class="card">
+        <strong>Bounded collection</strong>
+        <p>Only messages matching configured issuer-alert searches are examined, with explicit lookback and message-count limits.</p>
+      </article>
+      <article class="card">
+        <strong>Minimal retention</strong>
+        <p>Raw message bodies and attachments are not persisted. The local archive contains only normalized research evidence and provenance.</p>
+      </article>
+      <article class="card">
+        <strong>Local operation</strong>
+        <p>OAuth credentials, tokens, archives, reports, and operational logs stay on the authorized user's computer.</p>
+      </article>
+      <article class="card">
+        <strong>Human decisions</strong>
+        <p>New or revised evidence remains unapproved until a person reviews it. Collection never changes trading state.</p>
+      </article>
+    </section>
+  </main>
+  <footer class="shell">Paper Lab Evidence Collector · Single-user research tooling</footer>
+</body>
+</html>
